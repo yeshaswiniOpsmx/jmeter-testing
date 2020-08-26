@@ -1,24 +1,24 @@
-2020-08-26 09:11:22,234 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2020-08-26 09:11:22,261 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.1.1/bin/user.properties
-2020-08-26 09:11:22,263 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.1.1/bin/system.properties
-2020-08-26 09:11:22,271 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
-2020-08-26 09:11:22,271 INFO o.a.j.JMeter: Version 5.1.1 r1855137
-2020-08-26 09:11:22,271 INFO o.a.j.JMeter: java.version=1.8.0_222
-2020-08-26 09:11:22,272 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2020-08-26 09:11:22,272 INFO o.a.j.JMeter: os.name=Linux
-2020-08-26 09:11:22,272 INFO o.a.j.JMeter: os.arch=amd64
-2020-08-26 09:11:22,272 INFO o.a.j.JMeter: os.version=4.15.0-1093-oem
-2020-08-26 09:11:22,272 INFO o.a.j.JMeter: file.encoding=UTF-8
-2020-08-26 09:11:22,272 INFO o.a.j.JMeter: java.awt.headless=true
-2020-08-26 09:11:22,272 INFO o.a.j.JMeter: Max memory     =1073741824
-2020-08-26 09:11:22,273 INFO o.a.j.JMeter: Available Processors =8
-2020-08-26 09:11:22,282 INFO o.a.j.JMeter: Default Locale=English (EN)
-2020-08-26 09:11:22,283 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2020-08-26 09:11:22,283 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.1.1
-2020-08-26 09:11:22,283 INFO o.a.j.JMeter: user.dir  =/jmeter-testing/jmeter-scripts
-2020-08-26 09:11:22,283 INFO o.a.j.JMeter: PWD       =/jmeter-testing/jmeter-scripts
-2020-08-26 09:11:22,284 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: f14961edb216 FullName: f14961edb216
-2020-08-26 09:11:22,288 ERROR o.a.j.JMeter: An error occurred: 
+2020-08-26 09:14:18,025 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2020-08-26 09:14:18,054 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.1.1/bin/user.properties
+2020-08-26 09:14:18,055 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.1.1/bin/system.properties
+2020-08-26 09:14:18,067 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2020-08-26 09:14:18,068 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2020-08-26 09:14:18,068 INFO o.a.j.JMeter: java.version=1.8.0_222
+2020-08-26 09:14:18,068 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2020-08-26 09:14:18,068 INFO o.a.j.JMeter: os.name=Linux
+2020-08-26 09:14:18,068 INFO o.a.j.JMeter: os.arch=amd64
+2020-08-26 09:14:18,068 INFO o.a.j.JMeter: os.version=4.15.0-1093-oem
+2020-08-26 09:14:18,068 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-08-26 09:14:18,069 INFO o.a.j.JMeter: java.awt.headless=true
+2020-08-26 09:14:18,069 INFO o.a.j.JMeter: Max memory     =1073741824
+2020-08-26 09:14:18,069 INFO o.a.j.JMeter: Available Processors =8
+2020-08-26 09:14:18,077 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-08-26 09:14:18,078 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2020-08-26 09:14:18,078 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.1.1
+2020-08-26 09:14:18,078 INFO o.a.j.JMeter: user.dir  =/jmeter-testing/jmeter-scripts
+2020-08-26 09:14:18,078 INFO o.a.j.JMeter: PWD       =/jmeter-testing/jmeter-scripts
+2020-08-26 09:14:18,079 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: f14961edb216 FullName: f14961edb216
+2020-08-26 09:14:18,084 ERROR o.a.j.JMeter: An error occurred: 
 java.lang.IllegalArgumentException: Cannot write to '/jmeter-testing/reports' as folder is not empty
 	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:675) ~[jorphan.jar:5.1.1 r1855137]
 	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:633) ~[jorphan.jar:5.1.1 r1855137]

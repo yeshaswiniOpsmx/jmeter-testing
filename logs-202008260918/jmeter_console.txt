@@ -1,0 +1,7 @@
+Creating summariser <summary>
+Created the tree successfully using A-oes-datasource.jmx
+Starting the test @ Wed Aug 26 09:18:08 GMT 2020 (1598433488209)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary =     23 in 00:00:16 =    1.4/s Avg:   687 Min:   516 Max:  3255 Err:    23 (100.00%)
+Tidying up ...    @ Wed Aug 26 09:18:25 GMT 2020 (1598433505070)
+... end of run

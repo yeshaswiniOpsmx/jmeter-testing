@@ -43,6 +43,11 @@
             <stringProp name="Argument.value">${__P(password,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="endpoint" elementType="Argument">
+            <stringProp name="Argument.name">endpoint</stringProp>
+            <stringProp name="Argument.value">${__P(endpoint,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -889,7 +894,7 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;name&quot;:&quot;jmeter-testing&quot;,&quot;description&quot;:&quot;testing edit&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;rego&quot;:&quot;package opa.spinnaker.pipelines\n\ndeny[\&quot;No Manual Judgement Stages\&quot;] {\n   count(input.pipeline.stages)&gt;0\n   startswith(input.pipeline.name,\&quot;prod\&quot;)\n   manualStages := [d | d = input.pipeline.stages[_].type; d == \&quot;manualJudgment\&quot;]\n   count(manualStages) == 0\n}\ndeny[\&quot;No aquasec Stage\&quot;] {\n   startswith(input.pipeline.name,\&quot;prod\&quot;)\n   count(input.pipeline.stages)&gt;0\n   aquasecStages := [d | d = input.pipeline.stages[_].pipeline; d == \&quot;033c8849-0cc1-42a2-9c33-94d16049907c\&quot;]\n   count(aquasecStages) == 0\n\n}&quot;,&quot;endpoint&quot;:&quot;opa.oes:8181&quot;,&quot;endpointType&quot;:&quot;OPA&quot;,&quot;type&quot;:&quot;RUNTIME&quot;}</stringProp>
+                    <stringProp name="Argument.value">{&quot;name&quot;:&quot;jmeter-testing&quot;,&quot;description&quot;:&quot;testing edit&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;rego&quot;:&quot;package opa.spinnaker.pipelines\n\ndeny[\&quot;No Manual Judgement Stages\&quot;] {\n   count(input.pipeline.stages)&gt;0\n   startswith(input.pipeline.name,\&quot;prod\&quot;)\n   manualStages := [d | d = input.pipeline.stages[_].type; d == \&quot;manualJudgment\&quot;]\n   count(manualStages) == 0\n}\ndeny[\&quot;No aquasec Stage\&quot;] {\n   startswith(input.pipeline.name,\&quot;prod\&quot;)\n   count(input.pipeline.stages)&gt;0\n   aquasecStages := [d | d = input.pipeline.stages[_].pipeline; d == \&quot;033c8849-0cc1-42a2-9c33-94d16049907c\&quot;]\n   count(aquasecStages) == 0\n\n}&quot;,&quot;endpoint&quot;:&quot;${endpoint}&quot;,&quot;endpointType&quot;:&quot;OPA&quot;,&quot;type&quot;:&quot;RUNTIME&quot;}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
@@ -1414,7 +1419,7 @@
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;name&quot;:&quot;jmeter-testing2&quot;,&quot;description&quot;:&quot;jmeter testing edit&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;rego&quot;:&quot;package opa.spinnaker.pipelines\n\ndeny[\&quot;No Manual Judgement Stages\&quot;] {\n   count(input.pipeline.stages)&gt;0\n   startswith(input.pipeline.name,\&quot;prod\&quot;)\n   manualStages := [d | d = input.pipeline.stages[_].type; d == \&quot;manualJudgment\&quot;]\n   count(manualStages) == 0\n}\ndeny[\&quot;No aquasec Stage\&quot;] {\n   startswith(input.pipeline.name,\&quot;prod\&quot;)\n   count(input.pipeline.stages)&gt;0\n   aquasecStages := [d | d = input.pipeline.stages[_].pipeline; d == \&quot;033c8849-0cc1-42a2-9c33-94d16049907c\&quot;]\n   count(aquasecStages) == 0\n\n}&quot;,&quot;endpoint&quot;:&quot;opa.oes:8181&quot;,&quot;endpointType&quot;:&quot;OPA&quot;,&quot;type&quot;:&quot;COMPLIANT_PIPELINE&quot;}</stringProp>
+                    <stringProp name="Argument.value">{&quot;name&quot;:&quot;jmeter-testing2&quot;,&quot;description&quot;:&quot;jmeter testing edit&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;rego&quot;:&quot;package opa.spinnaker.pipelines\n\ndeny[\&quot;No Manual Judgement Stages\&quot;] {\n   count(input.pipeline.stages)&gt;0\n   startswith(input.pipeline.name,\&quot;prod\&quot;)\n   manualStages := [d | d = input.pipeline.stages[_].type; d == \&quot;manualJudgment\&quot;]\n   count(manualStages) == 0\n}\ndeny[\&quot;No aquasec Stage\&quot;] {\n   startswith(input.pipeline.name,\&quot;prod\&quot;)\n   count(input.pipeline.stages)&gt;0\n   aquasecStages := [d | d = input.pipeline.stages[_].pipeline; d == \&quot;033c8849-0cc1-42a2-9c33-94d16049907c\&quot;]\n   count(aquasecStages) == 0\n\n}&quot;,&quot;endpoint&quot;:&quot;${endpoint}&quot;,&quot;endpointType&quot;:&quot;OPA&quot;,&quot;type&quot;:&quot;COMPLIANT_PIPELINE&quot;}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
